@@ -1,8 +1,7 @@
 # Michael Hentrich is altering this script so as to create pedagical
 # version which will display each step of the process.
 # Date: September 2015
-# euclid(a,b)
-# ext_euclid(a,b)
+#
 # xed(a,b) for displaying steps of the process
 # xlgcd(a,b) - like xed but includes detailed summary
 # isolve(a,b,d) - solves Diophntine equations using recersive euclid
@@ -10,15 +9,19 @@
 # modinv(a, m)
 # icrt(a, n) - Chinese Remainder Theorem
 # mul_inv(a, b) - multiplicative modular inverse
+#
+# The MotherLoad for Number Theory: see Brian Gladman
+# 173.254.28.24/~brgladma/number_theory.py
+# crt, gcd, xgcd, lcm, cong, inv
 # 
 # Kirby Urner for a cooler version of the Extended Euclidean Algorithm, with
 # related inverse and Chinese Remainder Theorem functions.
+# euclid(a,b)
+# ext_euclid(a,b)
 #
-# I alter his code slightly by using:
-# from numpy import product, subtract, add
-# Functions used from number_theory.py:  eea, inv, crt, gcd, xgcd, lcm, cong
-#
-#
+# Functions at the the end are curosities where I am testing out
+# using product, add, subtract from numpy to use with reduce()
+# eea_map, xcrt, inverse
 #
 # Author: Sam Erickson for test(a,b) and getCoeffic(a,b)
 # Date: 7/14/2013
@@ -351,6 +354,7 @@ def mul_inv(a, b):
 
 
 # The MotherLoad for Number Theory: see Brian Gladman
+# 173.254.28.24/~brgladma/number_theory.py
 
 def gcd(a, *r):
   '''
