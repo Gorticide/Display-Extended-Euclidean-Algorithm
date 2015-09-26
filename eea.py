@@ -4,7 +4,7 @@
 #
 # xed(a,b) for displaying steps of the process
 # xlgcd(a,b) - like xed but includes detailed summary
-# isolve(a,b,d) - solves Diophntine equations using recersive euclid
+# isolve(a,b,d) - solves Diophntine equations using euclid
 # iterative_egcd(a, b)
 # modinv(a, m)
 # icrt(a, n) - Chinese Remainder Theorem
