@@ -453,7 +453,7 @@ def crt(a, m):
     if (a - b) % d:
       return None
     x, y, z = m // d, n // d, (m * n) // d
-    p, q, r = xgcd(x, y)
+    r, p, q = xgcd(x, y)
     return (b * p * x + a * q * y) % z
 
   if len(a) == len(m):
