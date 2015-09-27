@@ -406,7 +406,7 @@ def xgcd(a, b):
     a, b = b, r
     u, u1 = u1, u - q * u1
     v, v1 = v1, v - q * v1
-  return (u, v, a) if a > 0 else (-u, -v, -a)
+  return (a, u, v) if a > 0 else (-a, -u, -v)
 
 def cong(a, p, n):
   '''
@@ -424,7 +424,7 @@ def cong(a, p, n):
   g = gcd(a, n)
   if p % g > 0:
     return None
-  return (xgcd(a, n)[0] * (p // g)) % (n // g)
+  return (xgcd(a, n)[1] * (p // g)) % (n // g)
 
 def inv(a, n):
   '''
