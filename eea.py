@@ -436,7 +436,7 @@ def inv(a, n):
   >>> inv(314159, 271828)
   271051
   '''
-  return None if gcd(a, n) > 1 else xgcd(a, n)[0] % n
+  return None if gcd(a, n) > 1 else xgcd(a, n)[1] % n
 
 
 def crt(a, m):
