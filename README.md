@@ -1,5 +1,7 @@
 # Display-Extended-Euclidean-Algorithm
 This prints out each step of the extended Euclidean algorithm
+
+
  Michael Hentrich is altering this script so as to create pedagogical
  version which will display each step of the process.
  Date: September 2015
